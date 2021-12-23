@@ -185,6 +185,8 @@
     .bg-clr-secondary { background-color: var(--secondary); }
     .bg-clr-dark { background-color: var(--dark); }
 
+	img { width: 100%; }
+
 
 
 
