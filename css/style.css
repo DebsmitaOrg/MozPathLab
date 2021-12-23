@@ -331,13 +331,13 @@
 	}
 	footer#footer .innerWrap {
 		display: grid;
-		grid-template-columns: auto auto auto;
+		grid-template-columns: auto auto auto auto;
 	}
 	footer#footer .innerWrap .item {
 		display: block;
 		color: inherit;
 		text-decoration: none;
-		padding: 10px;
+		padding: 5px;
 		transition: 0.2s;
 	}
 	footer#footer .innerWrap .item.active,
@@ -354,8 +354,8 @@
 		font-size: 16px;
 	}
 	footer#footer .innerWrap .item span {
-		font-size: 12px;
-		margin-top: 5px;
+		font-size: 10px;
+		margin-top: 0px;
 		font-weight: 500;
 	}
 /*********************************** /FOOTER */
