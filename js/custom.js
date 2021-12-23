@@ -6,7 +6,16 @@ $('document').ready(function() {
 
 
 
-	
+	/***************************** HEADER DROPDOWN */
+		$("#myaccountToggle").click(function() {
+			$("#myaccountDrop").fadeToggle(100);
+		});
+		$("body").click(function(e) {
+			if( !$(e.target).closest("#myaccountToggle").length && !$(e.target).closest("#myaccountDrop").length && $("#myaccountDrop").is(":visible") ) {
+				$("#myaccountDrop").fadeToggle(100);
+            }
+        });
+	/***************************** /HEADER DROPDOWN */
   
 	
 

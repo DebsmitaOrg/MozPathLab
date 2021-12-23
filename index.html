@@ -96,7 +96,8 @@
                     <a href="javascript:void(0);" class="image-wrapper logo"><img src="images/logo.png" alt=""></a>
                 </div>
 
-                <div class="col-3 text-right position-relative">
+                <div class="col-3 text-right position-relative d-flex align-items-center justify-content-end">
+                    <!-- if Logged In -->
                     <a href="javascript:void(0);" id="myaccountToggle" class="">
                         <img src="https://i.pravatar.cc/300" alt="">
                     </a>
@@ -106,8 +107,13 @@
                         <li><a href="javascript:void(0)">Change Password</a></li>
                         <li><a href="javascript:void(0)">Logout</a></li>
                     </ul>
+                    <!-- /if Logged In -->
                     
                     
+
+
+
+                    <!-- if NOT Logged In -->
                     <!-- <a href="javascript:void(0);" id="loginToggle" class="">
                         <i class="icon icon-user"></i>
                     </a>
@@ -115,6 +121,7 @@
                         <li><a href="javascript:void(0)">Login</a></li>
                         <li><a href="javascript:void(0)">Register</a></li>
                     </ul> -->
+                    <!-- /if NOT Logged In -->
                 </div>
             </div>
         </div>
@@ -136,12 +143,36 @@
     <!--------------------------------------- /CONTENT -->
     
     
+
+
+
+
+
+
+
+
+
     
     
     <!--------------------------------------- FOOTER -->
     <footer id="footer">
-        <div class="container">
-            <div>Footer</div>
+        <div class="innerWrap">
+            <a href="javascript:void(0);" class="item active">
+                <i class="icon icon-home"></i>
+                <span>Home</span>
+            </a>
+    
+            
+            <a href="javascript:void(0);" class="item">
+                <i class="icon icon-calendar"></i>
+                <span>Appointments</span>
+            </a>
+    
+    
+            <a href="javascript:void(0);" class="item">
+                <i class="icon icon-user"></i>
+                <span>Account</span>
+            </a>
         </div>
     </footer>
     <!--------------------------------------- /FOOTER -->
