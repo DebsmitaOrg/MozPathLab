@@ -165,7 +165,7 @@
 
 /*********************************** GLOBAL */
     :root {
-        --default: #770c7c;
+        --default: #7266d8;
         --secondary: #D7B679;
         --dark: #071C1F;
 
@@ -220,7 +220,7 @@
         -webkit-transition: all .6s ease 0s;
         transition: all .6s ease 0s;
     }
-    div.ajax_loader img {
+    div.ajax_loader svg {
         position: absolute;
         max-width: 100px;
         width: auto;
@@ -235,3 +235,74 @@
         visibility: hidden;
     }
 /*********************************** /GLOBAL */
+
+
+
+
+
+
+
+/*********************************** HEADER */
+	header#header {
+		background-color: #fff;
+		border-bottom: 1px solid #efefef;
+		padding: 10px 0;
+	}
+
+
+	#header #sidemenuOpen,
+	#header #loginToggle,
+	#header #myaccountToggle {
+		text-decoration: none;
+		color: inherit;
+		background-color: var(--default);
+		color: #fff;
+		width: 30px;
+		height: 30px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+	#header #loginToggle {
+		border-radius: 100%;
+		border: 1px solid var(--default);
+		background-color: transparent;
+		color: var(--default);
+	}
+	#header #myaccountToggle {
+		border-radius: 100%;
+	}
+	#header #myaccountToggle img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+
+	#header .headerDropdown {
+		position: absolute;
+		background-color: #fff;
+		right: 15px;
+		top: calc( 100% + 10px );
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border-bottom: 1px solid #dfdfdf;
+	}
+	#header .headerDropdown li a {
+		display: block;
+		white-space: nowrap;
+		font-size: 12px;
+		padding: 5px 8px;
+		border: 1px solid #dfdfdf;
+		border-bottom: 0;
+		color: #000;
+		text-decoration: none;
+	}
+	#header .headerDropdown li a:hover {
+		background-color: #dfdfdf;
+	}
+/*********************************** /HEADER */
