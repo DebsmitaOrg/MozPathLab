@@ -239,6 +239,18 @@
 
 
 
+p {
+	font-size: 12px;
+}
+
+#content {
+	margin: 30px 0;
+}
+
+
+
+
+
 
 
 
@@ -310,7 +322,88 @@
 	#header .headerDropdown li a:hover {
 		background-color: #dfdfdf;
 	}
+
+
+
+
+	/* sidemenu */
+	#sidemenuWrap {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: -300px;
+		background: #fff;
+		z-index: 99;
+		max-width: 300px;
+		width: 100%;
+		transition: 0.3s;
+	}
+	.sidemenuOpen #sidemenuWrap {
+		left: 0;
+	}
+
+	#sidemenuClose {
+		text-decoration: none;
+		color: inherit;
+		background-color: var(--default);
+		color: #fff;
+		width: 30px;
+		height: 30px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+		border-radius: 3px;
+		overflow: hidden;
+		margin: 10px 10px 0 0;
+	}
+
+	.overlay-sidemenu {
+		position: fixed;
+		background-color: rgb(0,0,0,0.2);
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 98;
+	}
+	/* /sidemenu */
 /*********************************** /HEADER */
+
+
+
+
+
+
+
+
+
+
+
+/*********************************** HOME */
+	.tagline {
+		font-weight: 600;
+		/* font-size: 20px;
+		line-height: 24px; */
+	}
+
+	#banner .card {
+		padding: 30px;
+	}
+	#banner .card .title {
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	#banner .card .desc {
+		margin: 0;
+		color: rgb(255,255,255,0.8);
+	}
+/*********************************** /HOME */
+
+
+
+
+
 
 
 

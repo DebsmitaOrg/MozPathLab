@@ -16,6 +16,26 @@ $('document').ready(function() {
             }
         });
 	/***************************** /HEADER DROPDOWN */
+
+
+
+
+	/***************************** SIDEMENU */
+		$("#sidemenuOpen").click(function() {
+			$("body").addClass("sidemenuOpen");
+			$("body").prepend("<div class='overlay-sidemenu'></div>");
+		});
+		
+		$("#sidemenuClose").click(function() {
+			$("body").removeClass("sidemenuOpen");
+			$(".overlay-sidemenu").remove();
+		});
+	
+
+		$(".overlay-sidemenu").click(function() {
+			$("body").removeClass("sidemenuOpen");
+		});
+	/***************************** /SIDEMENU */
   
 	
 
