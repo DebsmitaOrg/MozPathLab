@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathology</title>
+
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+    <!-- BOOTSTRAP 4.6.1 STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- LINE AWESOME 1.3.0 -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <!-- ANIMATE.CSS 4.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- OWL CAROUSEL STYLESHEET 2.3.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    
+    <!-- LOCAL STYLESHEET style.css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- LOCAL STYLESHEET media.css -->
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+
+
+
+
+
+        
+    <!-- JQUERY 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JQUERY LAZY 1.7.11 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
+    
+    <!-- BOOTSTRAP SCRIPT 4.6.1 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+    <!-- WOW.JS 1.1.2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- OWL CAROUSEL SCRIPT 2.3.4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <!-- LOCAL SCRIPT -->
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+    
+
+
+    <!------------------ ajax loader -->
+        <div class="ajax_loader">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" r="30" stroke="#7266d8" stroke-width="10" fill="none"></circle>
+                <circle cx="50" cy="50" r="30" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none">
+                    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;180 50 50;720 50 50" keyTimes="0;0.5;1"></animateTransform>
+                    <animate attributeName="stroke-dasharray" repeatCount="indefinite" dur="1s" values="18.84955592153876 169.64600329384882;94.2477796076938 94.24777960769377;18.84955592153876 169.64600329384882" keyTimes="0;0.5;1"></animate>
+                </circle>
+            </svg>
+        </div>
+    <!------------------ /ajax loader -->
+
+
+    
+
+
+
+    
+    <!--------------------------------------- HEADER -->
+    <header id="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3 text-left">
+                    <a href="javascript:void(0);" id="sidemenuOpen" class="">
+                        <i class="icon icon-menu"></i>
+                    </a>
+
+
+                    <div id="sidemenuWrap">
+                        <div class="text-right">
+                            <i class="icon icon-close" id="sidemenuClose"></i>
+                        </div>
+
+                        <ul id="sidemenu">
+                            <li><a href="javascript:void(0);">Home</a></li>
+                            <li><a href="javascript:void(0);">Appointments</a></li>
+                            <li><a href="javascript:void(0);">Categories</a></li>
+                            <li><a href="javascript:void(0);">Account</a></li>
+                            <li><a href="javascript:void(0);">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-6 text-center">
+                    <a href="javascript:void(0);" class="image-wrapper logo"><img class="lazy" data-src="images/logo.png" alt=""></a>
+                </div>
+
+                <div class="col-3 text-right position-relative d-flex align-items-center justify-content-end">
+                    <!-- if Logged In -->
+                    <a href="javascript:void(0);" id="myaccountToggle" class="">
+                        <img class="lazy" data-src="https://i.pravatar.cc/300" alt="">
+                    </a>
+                    <ul id="myaccountDrop" class="headerDropdown">
+                        <li><a href="javascript:void(0)">My Account</a></li>
+                        <li><a href="javascript:void(0)">Edit Profile</a></li>
+                        <li><a href="javascript:void(0)">Change Password</a></li>
+                        <li><a href="javascript:void(0)">Logout</a></li>
+                    </ul>
+                    <!-- /if Logged In -->
+                    
+                    
+
+
+
+                    <!-- if NOT Logged In -->
+                    <!-- <a href="javascript:void(0);" id="loginToggle" class="">
+                        <i class="icon icon-user"></i>
+                    </a>
+                    <ul id="loginDrop" class="headerDropdown">
+                        <li><a href="javascript:void(0)">Login</a></li>
+                        <li><a href="javascript:void(0)">Register</a></li>
+                    </ul> -->
+                    <!-- /if NOT Logged In -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--------------------------------------- /HEADER -->
+    
+    
+    
+    
+    
+    
+    
+    <!--------------------------------------- CONTENT -->
+    <main id="content" class="home">
+        <div class="container">
+            
+            <!------------------------- TAGLINE -->
+            <div class="tagline h5">Advanced Healthcare <br> Made Personal</div>
+            <!------------------------- /TAGLINE -->
+
+
+
+
+
+            <!------------------------- BANNER -->
+            <div id="banner">
+                <div class="card bg-clr-default text-center text-light">
+                    <div class="h5 title">Welcome to MozPathLab</div>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab molestias eveniet asperiores velit accusantium quaerat assumenda? Quasi atqu.
+                    </p>
+
+                    <div class="buttons text-center mt-3">
+                        <a href="#" class="btn btn-light btn-sm">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <!------------------------- /BANNER -->
+
+
+
+
+
+
+            <!------------------------- SERVICES -->
+            <div id="services" class="my-4">
+                <div class="section-title">
+                    <div class="title">Our Services</div>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+
+
+                <div class="service-list">
+                    <a href="#" class="service">
+                        <div class="image-wrapper"><img class="lazy" data-src="images/service1.png" alt=""></div>
+                        <div class="title"><b>X-Ray</b></div>
+                    </a>
+                    <a href="#" class="service">
+                        <div class="image-wrapper"><img class="lazy" data-src="images/service2.png" alt=""></div>
+                        <div class="title"><b>Cardiology</b></div>
+                    </a>
+                    <a href="#" class="service">
+                        <div class="image-wrapper"><img class="lazy" data-src="images/service3.png" alt=""></div>
+                        <div class="title"><b>USG</b></div>
+                    </a>
+                    <a href="#" class="service">
+                        <div class="image-wrapper"><img class="lazy" data-src="images/service4.png" alt=""></div>
+                        <div class="title"><b>MRI</b></div>
+                    </a>
+                    <a href="#" class="service">
+                        <div class="image-wrapper"><img class="lazy" data-src="images/service5.png" alt=""></div>
+                        <div class="title"><b>CT Scan</b></div>
+                    </a>
+                    <a href="#" class="service">
+                        <div class="image-wrapper"><img class="lazy" data-src="images/service6.png" alt=""></div>
+                        <div class="title"><b>Neurology</b></div>
+                    </a>
+                </div>
+            </div>
+            <!------------------------- /SERVICES -->
+
+
+
+
+
+
+            <!------------------------- DASHBOARD -->
+            <div id="dashboard" class="my-4">
+                <div class="section-title">
+                    <div class="title">Your Health</div>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+
+                <div class="innerWrap">
+                    <a href="#" class="card p-3">
+                        <div class="title">Doctors</div>
+                        <div class="image-wrapper"><img class="lazy" data-src="images/doctor.png" alt=""></div>
+                    </a>
+                
+                
+                    <a href="#" class="card p-3">
+                        <div class="title">Medicines</div>
+                        <div class="image-wrapper"><img class="lazy" src="images/medicine.png" alt=""></div>
+                    </a>
+                
+                
+                    <a href="#" class="card p-3">
+                        <div class="title">Test</div>
+                        <div class="image-wrapper"><img class="lazy" src="images/test.png" alt=""></div>
+                    </a>
+                
+                
+                    <a href="#" class="card p-3">
+                        <div class="title">Report</div>
+                        <div class="image-wrapper"><img class="lazy" src="images/report.png" alt=""></div>
+                    </a>
+                </div>
+            </div>
+            <!------------------------- /DASHBOARD -->
+
+        </div>
+    </main>
+    <!--------------------------------------- /CONTENT -->
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    
+    <!--------------------------------------- FOOTER -->
+    <footer id="footer">
+        <div class="innerWrap">
+            <a href="home.html" class="item active">
+                <i class="icon icon-home"></i>
+                <span>Home</span>
+            </a>
+    
+            
+            <a href="appointments.html" class="item">
+                <i class="icon icon-calendar"></i>
+                <span>Appointments</span>
+            </a>
+    
+    
+            <a href="categories.html" class="item">
+                <i class="la la-th-large"></i>
+                <span>Categories</span>
+            </a>
+
+
+            <a href="account.html" class="item">
+                <i class="icon icon-cog"></i>
+                <span>Account</span>
+            </a>
+        </div>
+    </footer>
+    <!--------------------------------------- /FOOTER -->
+
+
+</body>
+</html>
