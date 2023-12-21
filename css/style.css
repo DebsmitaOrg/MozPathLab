@@ -323,6 +323,7 @@ p {
 		border-radius: 5px;
 		overflow: hidden;
 		display: none;
+		z-index: 1;
 	}
 	#header .headerDropdown li a {
 		display: block;
@@ -357,6 +358,20 @@ p {
 	}
 	.sidemenuOpen #sidemenuWrap {
 		left: 0;
+	}
+	#sidemenuWrap ul {
+		list-style: none;
+		padding: 20px 0;
+		margin: 0;
+	}
+	#sidemenuWrap ul li a {
+		display: block;
+		padding: 12px 24px;
+		text-decoration: none;
+	}
+	#sidemenuWrap ul li a.active {
+		background-color: var(--default);
+		color: #fff;
 	}
 
 	#sidemenuClose {
@@ -492,6 +507,100 @@ p {
 
 
 
+
+.tests .test {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 16px 0;
+	border: 1px solid #b6b6b6;
+}
+.tests .test .top {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 16px;
+	align-items: center;
+}
+.tests .test .top .imageWrapper {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 100px;
+}
+.tests .test .right .testName {
+	font-size: 16px;
+	font-weight: 600;
+}
+.tests .test .right .testDesc {
+	font-size: 14px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	margin-top: 8px;
+}
+.tests .test .bottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.tests .test .bottom .button-light,
+.tests .test .bottom .button-dark {
+	text-align: center;
+	display: block;
+	padding: 8px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.tests .test .bottom .button-light {
+	border-top: 1px solid #b6b6b6;
+	color: var(--default);
+}
+.tests .test .bottom .button-dark {
+	background-color: var(--default);
+	color: #fff;
+}
+
+
+
+
+.categories {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	margin: 16px 0;
+}
+.categories .category {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid #b6b6b6;
+	padding: 10px;
+}
+.categories .category .imageWrapper {
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+.categories .category .imageWrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.categories .category .categoryName {
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+.btn-primary {
+	background: var(--default);
+	border: 0;
+}
 
 
 
